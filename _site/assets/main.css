@@ -27,8 +27,8 @@ li > ul, li > ol { margin-bottom: 0; }
 h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 
 /** Links */
-a { color: #2a7ae2; text-decoration: none; }
-a:visited { color: #1756a9; }
+a { color: #538DD7; text-decoration: none; }
+a:visited { color: #2a66b4; }
 a:hover { color: #111; text-decoration: underline; }
 .social-media-list a:hover { text-decoration: none; }
 .social-media-list a:hover .username { text-decoration: underline; }
@@ -65,7 +65,7 @@ table th { background-color: #f0f0f0; border: 1px solid #dedede; border-bottom-c
 table td { border: 1px solid #e8e8e8; }
 
 /** Site header */
-.site-header { border-top: 5px solid #424242; border-bottom: 1px solid #e8e8e8; min-height: 55.95px; position: relative; }
+.site-header { border-top: 5px solid #424242; border-bottom: 1px solid #FF9D23; min-height: 55.95px; position: relative; }
 
 .site-title { font-size: 26px; font-weight: 300; line-height: 54px; letter-spacing: -1px; margin-bottom: 0; float: left; }
 .site-title, .site-title:visited { color: #424242; }
@@ -125,12 +125,20 @@ table td { border: 1px solid #e8e8e8; }
 @media screen and (max-width: 800px) { .post-title { font-size: 36px; } }
 
 .post-content { margin-bottom: 30px; }
-.post-content h2 { font-size: 32px; }
+.post-content .feather-tool { stroke: #FF9D23; fill: none; }
+.post-content h1 { font-size: 35.2px; font-weight: 700; margin: 50px 0 25px; }
+.post-content h1::before { content: url("../../assets/feather-icons-tool.svg"); width: 24px; height: 24px; padding-right: 10px; }
+@media screen and (max-width: 800px) { .post-content h1 { font-size: 32px; } }
+.post-content h2 { font-size: 28.8px; margin: 30px 0 10px; }
+.post-content h2::before { font-size: 24px; content: '##'; color: #FF9D23; padding-right: 10px; }
 @media screen and (max-width: 800px) { .post-content h2 { font-size: 28px; } }
-.post-content h3 { font-size: 26px; }
+.post-content h3 { font-size: 24px; }
 @media screen and (max-width: 800px) { .post-content h3 { font-size: 22px; } }
 .post-content h4 { font-size: 20px; }
 @media screen and (max-width: 800px) { .post-content h4 { font-size: 18px; } }
+
+/** Images (global) */
+img { display: block; margin: 0 auto; border-radius: 1%; }
 
 /** Syntax highlighting styles */
 .highlight { background: #fff; }

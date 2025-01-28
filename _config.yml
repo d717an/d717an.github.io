@@ -21,12 +21,13 @@
 title: Dan's DIY Blog
 email: ""
 description: >-
-  I use this blog to share some of the DIY projects I work on
+  I use this blog to share some of the DIY projects I work on.
 baseurl: "" # the subpath of your site, e.g. /blog
 domain: d717an-blog.github.io
 url: https://d717an-blog.github.io
-twitter_username: ""
+author: Dan Sullivan
 github_username: d717an
+rss: Subscribe
 
 # Build settings
 theme: minima
