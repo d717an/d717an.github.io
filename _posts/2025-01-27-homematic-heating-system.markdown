@@ -3,6 +3,7 @@ layout: post
 title: "Replacing a Danfoss Underfloor Heating System with Homematic IP"
 date: 2025-01-27 08:00:00 +0100
 categories: smart-home homematic heating
+toc: true
 ---
 
 # Why?

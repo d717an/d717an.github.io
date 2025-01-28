@@ -64,6 +64,11 @@ table th, table td { padding: 10px 15px; }
 table th { background-color: #f0f0f0; border: 1px solid #dedede; border-bottom-color: #c9c9c9; }
 table td { border: 1px solid #e8e8e8; }
 
+html { scroll-behavior: smooth; }
+
+/** Images (global) */
+img { display: block; margin: 0 auto; border-radius: 1%; }
+
 /** Site header */
 .site-header { border-top: 5px solid #424242; border-bottom: 1px solid #FF9D23; min-height: 55.95px; position: relative; }
 
@@ -125,7 +130,6 @@ table td { border: 1px solid #e8e8e8; }
 @media screen and (max-width: 800px) { .post-title { font-size: 36px; } }
 
 .post-content { margin-bottom: 30px; }
-.post-content .feather-tool { stroke: #FF9D23; fill: none; }
 .post-content h1 { font-size: 35.2px; font-weight: 700; margin: 50px 0 25px; }
 .post-content h1::before { content: url("../../assets/feather-icons-tool.svg"); width: 24px; height: 24px; padding-right: 10px; }
 @media screen and (max-width: 800px) { .post-content h1 { font-size: 32px; } }
@@ -137,8 +141,15 @@ table td { border: 1px solid #e8e8e8; }
 .post-content h4 { font-size: 20px; }
 @media screen and (max-width: 800px) { .post-content h4 { font-size: 18px; } }
 
-/** Images (global) */
-img { display: block; margin: 0 auto; border-radius: 1%; }
+.back-to-top { position: fixed; bottom: 20px; right: 20px; display: inline-block; padding: 10px; font-size: 18px; border: none; outline: none; background-color: #FF9D23; color: #fff; border-radius: 50%; cursor: pointer; transition: ease-in 0.1s; }
+
+.back-to-top:hover { background-color: #16C47F; transform: scale(1.1) translateY(-5px); }
+
+.back-to-top:active { background-color: #16C47F; }
+
+.back-to-top i { margin-right: 5px; }
+
+.back-to-top-svg { width: 24px; height: 24px; display: inline-block; fill: none; stroke: #fff; stroke-width: 3; stroke-linecap: round; vertical-align: text-top; }
 
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
