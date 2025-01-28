@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+
+<head>
+  {% include toTop.html %}
+</head>
+
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -11,17 +16,29 @@ layout: default
         {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+      • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card"
+          itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}
+    </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
+    {{ content | toc }}
   </div>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
-
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+
+  <li><a href="/feed.xml"><svg class="svg-icon">
+        <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+      </svg> <span>Subscribe</span></a></li>
+
+
+  <footer class="fixed-bottom">
+    <button class="back-to-top" title="Back to top">
+      <svg class="back-to-top-svg">
+        <use xlink:href="/assets/other-icons.svg#up-chevron"></use>
+      </svg>
+    </button>
+  </footer>
+
 </article>
