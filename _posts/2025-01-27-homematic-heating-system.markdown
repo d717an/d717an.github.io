@@ -75,7 +75,7 @@ categories: smart-home homematic heating
 
 ### Record Your Existing Zones
 
-- You're heating manifold will have several heating circuits, each with a control valve
+- Your heating manifold will have several heating circuits, each with a control valve
   - In my case, I have eight heating circuits with seven control valves
   - The eighth is left permanently open because it's controlled with a radiator thermostat in the bathroom, hence no valve needed
 - You'll want to know which room each circuit supplies for setting up the homematic system, so figure that out now and write it down

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-28T05:01:27-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dan’s DIY Blog</title><subtitle>I use this blog to share some of the DIY projects I work on</subtitle><entry><title type="html">Replacing a Danfoss Underfloor Heating System with Homematic IP</title><link href="http://localhost:4000/smart-home/homematic/heating/2025/01/27/homematic-heating-system.html" rel="alternate" type="text/html" title="Replacing a Danfoss Underfloor Heating System with Homematic IP" /><published>2025-01-27T02:00:00-05:00</published><updated>2025-01-27T02:00:00-05:00</updated><id>http://localhost:4000/smart-home/homematic/heating/2025/01/27/homematic-heating-system</id><content type="html" xml:base="http://localhost:4000/smart-home/homematic/heating/2025/01/27/homematic-heating-system.html"><![CDATA[<h1 id="why">Why?</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-28T07:52:15-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dan’s DIY Blog</title><subtitle>I use this blog to share some of the DIY projects I work on.</subtitle><author><name>Dan Sullivan</name></author><entry><title type="html">Replacing a Danfoss Underfloor Heating System with Homematic IP</title><link href="http://localhost:4000/smart-home/homematic/heating/2025/01/27/homematic-heating-system.html" rel="alternate" type="text/html" title="Replacing a Danfoss Underfloor Heating System with Homematic IP" /><published>2025-01-27T02:00:00-05:00</published><updated>2025-01-27T02:00:00-05:00</updated><id>http://localhost:4000/smart-home/homematic/heating/2025/01/27/homematic-heating-system</id><content type="html" xml:base="http://localhost:4000/smart-home/homematic/heating/2025/01/27/homematic-heating-system.html"><![CDATA[<h1 id="why">Why?</h1>
 
 <h2 id="why-replace-the-existing-system">Why Replace The Existing System?</h2>
 
@@ -145,7 +145,7 @@
 <h3 id="record-your-existing-zones">Record Your Existing Zones</h3>
 
 <ul>
-  <li>You’re heating manifold will have several heating circuits, each with a control valve
+  <li>Your heating manifold will have several heating circuits, each with a control valve
     <ul>
       <li>In my case, I have eight heating circuits with seven control valves</li>
       <li>The eighth is left permanently open because it’s controlled with a radiator thermostat in the bathroom, hence no valve needed</li>
@@ -540,4 +540,4 @@
   <li>Homematic’s Access Point is an excellent and affordable way to get a modern heating system into the apartment</li>
   <li>However, I’d like more local control, and I’m comfortable managing our own external access to the home</li>
   <li>With that, I’ll eventually switch to Homematic IP’s other options for the “central brain”, either the CCU3 or the community’s open source RaspberryMatic</li>
-</ul>]]></content><author><name></name></author><category term="smart-home" /><category term="homematic" /><category term="heating" /><summary type="html"><![CDATA[Why?]]></summary></entry></feed>
+</ul>]]></content><author><name>Dan Sullivan</name></author><category term="smart-home" /><category term="homematic" /><category term="heating" /><summary type="html"><![CDATA[Why?]]></summary></entry></feed>
