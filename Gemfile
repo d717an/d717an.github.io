@@ -6,8 +6,10 @@ gem "github-pages", "~> 232", group: :jekyll_plugins
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-toc", "~> 0.19"
-  gem 'jekyll-target-blank', "~> 2.0.2"
-  gem 'liquid_reading_time', "~> 1.1.3"
+  gem "jekyll-target-blank", "~> 2.0.2"
+  gem "liquid_reading_time", "~> 1.1.3"
+  gem "jekyll-loading-lazy", "~> 0.1.1"
+  gem "jekyll-archives", "~> 2.3.0"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
