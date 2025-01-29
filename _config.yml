@@ -34,6 +34,12 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-toc
+  - jekyll-target-blank
+  - liquid_reading_time
+
+# Add class to external links for css
+target-blank:
+  add_css_classes: icon square-up-right-after
 
 # Exclude from processing.
 # The following items will not be processed, by default.

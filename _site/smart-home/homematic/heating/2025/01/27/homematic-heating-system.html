@@ -23,22 +23,24 @@
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Dan&apos;s DIY Blog" /></head>
 <body><header class="site-header" role="banner">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Dan&#39;s DIY Blog</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <div class="wrapper">
+<a class="site-title" rel="author" href="/">Dan's DIY Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger">
         <label for="nav-trigger">
           <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            <svg viewbox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
             </svg>
           </span>
         </label>
 
         <div class="trigger"><a class="page-link" href="/about/">About</a></div>
-      </nav></div>
+      </nav>
+</div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <head>
+        
   <script>
   document.addEventListener("DOMContentLoaded", function () {
     const backToTopButton = document.querySelector(".back-to-top");
@@ -48,7 +50,7 @@
     });
   });
 </script>
-</head>
+
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -56,23 +58,33 @@
     <h1 class="post-title p-name" itemprop="name headline">Replacing a Danfoss Underfloor Heating System with Homematic IP</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="2025-01-27T02:00:00-05:00" itemprop="datePublished">Jan 27, 2025
-      </time></p>
+      </time>
+      
+      • <span class="reading-time" title="Estimated read time">
+        <span class="icon icon-inline book-open-before"></span>
+        10 minutes
+      </span>
+      
+    </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h1"><a href="#why">Why?</a>
+<li class="toc-entry toc-h1">
+<a href="#why">Why?</a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#why-replace-the-existing-system">Why Replace The Existing System?</a></li>
 <li class="toc-entry toc-h2"><a href="#why-homematic-ip">Why Homematic IP?</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h1"><a href="#purchases">Purchases</a></li>
-<li class="toc-entry toc-h1"><a href="#installation-with-access-point">Installation with Access Point</a>
+<li class="toc-entry toc-h1">
+<a href="#installation-with-access-point">Installation with Access Point</a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#get-the-app">Get the App</a></li>
 <li class="toc-entry toc-h2"><a href="#set-up-the-access-point">Set Up the Access Point</a></li>
-<li class="toc-entry toc-h2"><a href="#cv-room-prep">CV Room Prep</a>
+<li class="toc-entry toc-h2">
+<a href="#cv-room-prep">CV Room Prep</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#power-down-the-existing-system">Power Down the Existing System</a></li>
 <li class="toc-entry toc-h3"><a href="#record-your-existing-zones">Record Your Existing Zones</a></li>
@@ -81,33 +93,39 @@
 <li class="toc-entry toc-h3"><a href="#optional---add-mounting-board">Optional - Add Mounting Board</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#switch-actuator-for-heating-system-whs2">Switch Actuator for Heating System (WHS2)</a>
+<li class="toc-entry toc-h2">
+<a href="#switch-actuator-for-heating-system-whs2">Switch Actuator for Heating System (WHS2)</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#hardware">Hardware</a></li>
 <li class="toc-entry toc-h3"><a href="#in-the-app">In the App</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#motorized-underfloor-heating-controller">Motorized Underfloor Heating Controller</a>
+<li class="toc-entry toc-h2">
+<a href="#motorized-underfloor-heating-controller">Motorized Underfloor Heating Controller</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#hardware-1">Hardware</a></li>
 <li class="toc-entry toc-h3"><a href="#in-the-app-1">In the App</a></li>
-<li class="toc-entry toc-h3"><a href="#troubleshooting">Troubleshooting</a>
+<li class="toc-entry toc-h3">
+<a href="#troubleshooting">Troubleshooting</a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#heating-zone-error-adjustment-range-too-small-check-if-valve-pin-is-stuck">Heating zone error, adjustment range too small, check if valve pin is stuck</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#thermostat-x3">Thermostat (x3)</a>
+<li class="toc-entry toc-h2">
+<a href="#thermostat-x3">Thermostat (x3)</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#hardware-2">Hardware</a></li>
 <li class="toc-entry toc-h3"><a href="#in-the-app-2">In the App</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#additional-configuration-in-the-app">Additional Configuration in the App</a>
+<li class="toc-entry toc-h2">
+<a href="#additional-configuration-in-the-app">Additional Configuration in the App</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#emergency-operation-heating">Emergency Operation Heating</a></li>
-<li class="toc-entry toc-h3"><a href="#schedules">Schedules</a>
+<li class="toc-entry toc-h3">
+<a href="#schedules">Schedules</a>
 <ul>
 <li class="toc-entry toc-h4"><a href="#change-to-manual-control-ie-no-schedule">Change to Manual Control (i.e. no schedule)</a></li>
 <li class="toc-entry toc-h4"><a href="#adjust-schedules">Adjust Schedules</a></li>
@@ -115,21 +133,24 @@
 </li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#additional-testing">Additional Testing</a>
+<li class="toc-entry toc-h2">
+<a href="#additional-testing">Additional Testing</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#what-happens-if-the-house-loses-internet">What Happens if the House Loses Internet?</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-entry toc-h1"><a href="#future-work">Future Work</a>
+<li class="toc-entry toc-h1">
+<a href="#future-work">Future Work</a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#bathroom-smart-thermostat">Bathroom Smart Thermostat</a></li>
 <li class="toc-entry toc-h2"><a href="#power-supplies-for-wall-thermostats">Power Supplies for Wall Thermostats</a></li>
 <li class="toc-entry toc-h2"><a href="#change-access-point-to-local-control">Change Access Point to Local Control</a></li>
 </ul>
 </li>
-</ul><h1 id="why">
+</ul>
+<h1 id="why">
 <a class="anchor" href="#why" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why?</h1>
 
 <h2 id="why-replace-the-existing-system">
@@ -200,35 +221,35 @@
       <td>1</td>
       <td>50</td>
       <td>50</td>
-      <td><a href="https://www.amazon.nl/dp/B00ZQG6MGO">amazon.nl</a></td>
+      <td><a href="https://www.amazon.nl/dp/B00ZQG6MGO" target="_blank" rel="noopener noreferrer" class="icon square-up-right-after">amazon.nl</a></td>
     </tr>
     <tr>
       <td>Thermostat</td>
       <td>3</td>
       <td>50</td>
       <td>150</td>
-      <td><a href="https://www.amazon.nl/dp/B01KPM3OQ4">amazon.nl</a></td>
+      <td><a href="https://www.amazon.nl/dp/B01KPM3OQ4" target="_blank" rel="noopener noreferrer" class="icon square-up-right-after">amazon.nl</a></td>
     </tr>
     <tr>
       <td>Motorized Valve Controller</td>
       <td>1</td>
       <td>200</td>
       <td>200</td>
-      <td><a href="https://www.amazon.nl/dp/B07RJZ57D7">amazon.nl</a></td>
+      <td><a href="https://www.amazon.nl/dp/B07RJZ57D7" target="_blank" rel="noopener noreferrer" class="icon square-up-right-after">amazon.nl</a></td>
     </tr>
     <tr>
       <td>Motorized Valve Actuator</td>
       <td>7</td>
       <td>20</td>
       <td>140</td>
-      <td><a href="https://www.amazon.nl/dp/B07RJZ5F1Y">amazon.nl</a></td>
+      <td><a href="https://www.amazon.nl/dp/B07RJZ5F1Y" target="_blank" rel="noopener noreferrer" class="icon square-up-right-after">amazon.nl</a></td>
     </tr>
     <tr>
       <td>Switch Actuator HmIP-WHS2</td>
       <td>1</td>
       <td>70</td>
       <td>70</td>
-      <td><a href="https://www.amazon.nl/dp/B0758L1267">amazon.nl</a></td>
+      <td><a href="https://www.amazon.nl/dp/B0758L1267" target="_blank" rel="noopener noreferrer" class="icon square-up-right-after">amazon.nl</a></td>
     </tr>
     <tr>
       <td>Total</td>
@@ -724,9 +745,7 @@
 
   <footer class="fixed-bottom">
     <button class="back-to-top" title="Back to top">
-      <svg class="back-to-top-svg">
-        <use xlink:href="/assets/other-icons.svg#up-chevron"></use>
-      </svg>
+      <span class="icon icon-inline angles-up-before" style="width: 20px"></span>
     </button>
   </footer>
 
@@ -737,16 +756,24 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">Dan&#39;s DIY Blog</h2>
+    <h2 class="footer-heading">Dan's DIY Blog</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li class="p-name">Dan Sullivan</li><li><a class="u-email" href="mailto:"></a></li></ul>
+          <li class="p-name">Dan Sullivan</li>
+<li><a class="u-email" href="mailto:"></a></li>
+</ul>
       </div>
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/d717an"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">d717an</span></a></li><li><a href="/feed.xml"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#rss"></use></svg> <span>Subscribe</span></a></li></ul>
-</div>
+      <div class="footer-col footer-col-2"><ul class="social-media-list">
+<li><a href="https://github.com/d717an" target="_blank" rel="noopener noreferrer" class="icon square-up-right-after"><svg class="svg-icon">
+        <use xlink:href="/assets/minima-social-icons.svg#github"></use>
+      </svg> <span class="username">d717an</span></a></li>
+<li><a href="/feed.xml"><svg class="svg-icon">
+        <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+      </svg> <span>Subscribe</span></a></li>
+</ul></div>
 
       <div class="footer-col footer-col-3">
         <p>I use this blog to share some of the DIY projects I work on.</p>

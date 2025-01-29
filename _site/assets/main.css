@@ -69,6 +69,22 @@ html { scroll-behavior: smooth; }
 /** Images (global) */
 img { display: block; margin: 0 auto; border-radius: 1%; }
 
+/** Icons) */
+@font-face { font-family: 'Font Awesome 6 Free'; font-style: normal; font-weight: 900; font-display: block; src: url("../fontawesome/webfonts/fa-solid-900.woff2"); }
+.icon::before, .icon::after { font-family: 'Font Awesome 6 Free'; font-weight: 900; -webkit-font-smoothing: antialiased; }
+
+.icon-inline { display: inline-block; }
+
+.angles-up-before::before { content: '\f102'; }
+
+.clock-before::before { content: '\f017'; }
+
+.book-open-before::before { content: '\f518'; }
+
+.screwdriver-wrench-before::before { content: '\f7d9'; }
+
+.square-up-right-after::after { content: '\f360'; padding-left: 5px; }
+
 /** Site header */
 .site-header { border-top: 5px solid #424242; border-bottom: 1px solid #FF9D23; min-height: 55.95px; position: relative; }
 
@@ -131,10 +147,9 @@ img { display: block; margin: 0 auto; border-radius: 1%; }
 
 .post-content { margin-bottom: 30px; }
 .post-content h1 { font-size: 35.2px; font-weight: 700; margin: 50px 0 25px; }
-.post-content h1::before { content: url("../../assets/feather-icons-tool.svg"); width: 24px; height: 24px; padding-right: 10px; }
+.post-content h1::before { font-family: 'Font Awesome 6 Free'; font-weight: 900; -webkit-font-smoothing: antialiased; content: '\f7d9'; padding-right: 5px; color: #16C47F; }
 @media screen and (max-width: 800px) { .post-content h1 { font-size: 32px; } }
 .post-content h2 { font-size: 28.8px; margin: 30px 0 10px; }
-.post-content h2::before { font-size: 24px; content: '##'; color: #FF9D23; padding-right: 10px; }
 @media screen and (max-width: 800px) { .post-content h2 { font-size: 28px; } }
 .post-content h3 { font-size: 24px; }
 @media screen and (max-width: 800px) { .post-content h3 { font-size: 22px; } }
