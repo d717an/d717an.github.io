@@ -1,5 +1,8 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# used by jekyll to find main.scss
 ---
-
-@import "minima";
+@charset 'utf-8';
+@use './sass/base' as *;
+@use './sass/components' as *;
+@use './sass/layouts' as *;
+@use './sass/pages' as *;

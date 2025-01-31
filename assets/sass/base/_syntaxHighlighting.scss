@@ -1,6 +1,5 @@
-/**
- * Syntax highlighting styles
- */
+@use '../abstracts' as *;
+
 .highlight {
   background: #fff;
   @extend %vertical-rhythm;

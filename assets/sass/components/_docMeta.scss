@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+
+.doc-meta {
+  font-size: $small-font-size;
+  color: $grey;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.doc-meta .icon {
+  color: $color1;
+}

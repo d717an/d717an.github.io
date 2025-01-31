@@ -19,7 +19,6 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Dan's DIY Blog
-email: ""
 description: >-
   I use this blog to share some of the DIY projects I work on.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -29,32 +28,11 @@ author: Dan Sullivan
 github_username: d717an
 rss: Subscribe
 
-# Build settings
-theme: minima
-
-# TODO: remove plugins not build by Github pages? or all if building via actions
-plugins:
-  - jekyll-feed
-  - jekyll-toc
-  - jekyll-target-blank
-  - liquid_reading_time
-  - jekyll-loading-lazy
-  - jekyll-archives
-
-# Add class to external links for css
-target-blank:
-  add_css_classes: icon square-up-right-after
-
-# docs: https://github.com/jekyll/jekyll-archives/blob/master/docs/configuration.md
-jekyll-archives:
-  enabled: []
-  layout: archive
-  permalinks:
-    year: "/:year/"
-    month: "/:year/:month/"
-    day: "/:year/:month/:day/"
-    tag: "/tag/:name/"
-    category: "/category/:name/"
+collections_dir: _collections
+collections:
+  heating:
+    output: true
+    permalink: /:collection/:name
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -75,3 +53,11 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+# Plugins
+toc:
+  max_level: 3
+
+# Add class to external links for css
+target-blank:
+  add_css_classes: icon square-up-right-after

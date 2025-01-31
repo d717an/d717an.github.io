@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+     -moz-font-feature-settings: "kern" 1;
+       -o-font-feature-settings: "kern" 1;
+          font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+
+figcaption {
+  font-size: $small-font-size;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $base-font-weight;
+}
+
+blockquote {
+  @include relative-font-size(1.125);
+  letter-spacing: -1px;
+  font-style: italic;
+}
+
+pre,
+code {
+  @include relative-font-size(0.9375);
+}

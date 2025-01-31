@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Replacing a Danfoss Underfloor Heating System with Homematic IP"
-date: 2025-01-27 08:00:00 +0100
-categories: smart-home homematic heating
+title: "Installing a Homematic Underfloor Heating System"
+description: >-
+  I replaced our ~10 year old Danfoss system with a modern Homematic System with smart home integration, smart phone control, scheduling, and remote monitoring.
+date: 2025-01-27
+order: 100
 toc: true
 ---
 
