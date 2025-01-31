@@ -1,0 +1,62 @@
+@use '../abstracts' as *;
+
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title {
+  @include relative-font-size(2.625);
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(2.25);
+  }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h1 {
+    @include relative-font-size(2.2);
+    font-weight: 700;
+    margin: 50px 0 25px;
+    &::before {
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      -webkit-font-smoothing: antialiased;
+      content: '\f7d9';
+      padding-right: 5px;
+      color: $color1;
+    }
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(2);
+    }
+  }
+
+  h2 {
+    @include relative-font-size(1.8);
+    margin: 30px 0 10px;
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.75);
+    }
+  }
+
+  h3 {
+    @include relative-font-size(1.5);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.375);
+    }
+  }
+
+  h4 {
+    @include relative-font-size(1.25);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.125);
+    }
+  }
+}

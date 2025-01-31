@@ -1,0 +1,14 @@
+@use 'sass:color';
+
+$text-color:       #111111 !default;
+$background-color: #fdfdfd !default;
+$brand-color:      #538DD7 !default;
+
+$grey:       #828282 !default;
+$grey-light: color.adjust($grey, $lightness: 40%) !default;
+$grey-dark: color.adjust($grey, $lightness: -25%) !default;
+
+$color1:       #16C47F !default;
+$color2:       #FFD65A !default;
+$color3:       #FF9D23 !default;
+$color4:       #F93827 !default;

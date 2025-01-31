@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: inline-block;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: $color3;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: ease-in 0.1s;
+}
+
+.back-to-top:hover {
+  background-color: $color1;
+  transform: scale(1.1) translateY(-5px);
+}
+
+.back-to-top:active {
+  background-color: $color1;
+}
+
+.back-to-top i {
+  margin-right: 5px;
+}
