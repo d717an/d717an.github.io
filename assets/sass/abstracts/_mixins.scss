@@ -1,4 +1,4 @@
-@use './variables' as v;
+@use './fonts' as f;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -14,5 +14,5 @@
 }
 
 @mixin relative-font-size($ratio) {
-  font-size: v.$base-font-size * $ratio;
+  font-size: f.$base-font-size * $ratio;
 }

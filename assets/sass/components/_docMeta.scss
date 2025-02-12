@@ -5,9 +5,10 @@
   color: $grey;
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 20px;
 }
 
 .doc-meta .icon {
   color: $color1;
+  padding-right: 2px;
 }

@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+
+.doc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sidebar {
+  background-color: lightgray;
+  flex-basis: $sidebar-width;
+}
+
+.content-pane {
+  background-color: orange;
+  flex-basis: $content-width;
+}
+
+
+// TODO
+// media query to handle right column disappearing
+// basis tweaking for size of side bar
+// hover / show sidebar
+// border element on sidebar that grows with window scroll
+// restrict sidepanes to 100% viewport hight, scroll y on overflow
+// format sidebar TOC

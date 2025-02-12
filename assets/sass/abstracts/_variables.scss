@@ -2,12 +2,14 @@ $spacing-unit:     30px !default;
 
 $table-text-align: left !default;
 
+
+// max allowable width of all content (i.e. Ultrawide monitors)
+$max-body-width:  2400px !default;
+
 // Width of the content area
-$content-width:    800px !default;
+$content-width:    720px !default;
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
-$base-font-size:   16px !default;
-$base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
-$base-line-height: 1.5 !default;
+// Sidebar layout
+$sidebar-width:    250px !default;

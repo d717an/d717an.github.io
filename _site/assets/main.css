@@ -5,7 +5,49 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-.footer-col-wrapper:after, .wrapper:after {
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("./fonts/fontawesome/fa-solid-900.woff2");
+}
+@font-face {
+  font-family: "NotoSans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("./fonts/google/notoSans/NotoSans-Regular.ttf");
+}
+@font-face {
+  font-family: "NotoSans Light";
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src: url("./fonts/google/notoSans/NotoSans-Light.ttf");
+}
+@font-face {
+  font-family: "NotoSans Light Italic";
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src: url("./fonts/google/notoSans/NotoSans-LightItalic.ttf");
+}
+@font-face {
+  font-family: "NotoSans Italic";
+  font-style: italic;
+  font-weight: 400;
+  font-display: block;
+  src: url("./fonts/google/notoSans/NotoSans-Italic.ttf");
+}
+@font-face {
+  font-family: "NotoSans Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url("./fonts/google/notoSans/NotoSans-Bold.ttf");
+}
+.wrapper2:after, .wrapper:after, .footer-col-wrapper:after {
   content: "";
   display: table;
   clear: both;
@@ -124,26 +166,6 @@ pre > code {
   border: 0;
   padding-right: 0;
   padding-left: 0;
-}
-
-/**
- * Wrapper
- */
-.wrapper {
-  max-width: -webkit-calc(800px - (30px * 2));
-  max-width: calc(800px - 30px * 2);
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px;
-}
-@media screen and (max-width: 800px) {
-  .wrapper {
-    max-width: -webkit-calc(800px - (30px));
-    max-width: calc(800px - (30px));
-    padding-right: calc(30px / 2);
-    padding-left: calc(30px / 2);
-  }
 }
 
 /**
@@ -372,32 +394,31 @@ table td {
 }
 
 body {
-  font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
+  font: 400 18px/1.5 "NotoSans Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-kerning: normal;
 }
 
 figcaption {
-  font-size: 14px;
+  font-size: 15.75px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+h1 {
+  font-family: "NotoSans Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 blockquote {
-  font-size: 18px;
+  font-size: 20.25px;
   letter-spacing: -1px;
   font-style: italic;
 }
 
 pre,
 code {
-  font-size: 15px;
+  font-size: 16.875px;
 }
 
 .svg-icon {
@@ -413,13 +434,6 @@ code {
   padding-top: 5px;
 }
 
-@font-face {
-  font-family: "Font Awesome 6 Free";
-  font-style: normal;
-  font-weight: 900;
-  font-display: block;
-  src: url("../fontawesome/webfonts/fa-solid-900.woff2");
-}
 .icon::before, .icon::after {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
@@ -489,15 +503,16 @@ code {
 }
 
 .doc-meta {
-  font-size: 14px;
+  font-size: 15.75px;
   color: #828282;
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 20px;
 }
 
 .doc-meta .icon {
   color: #16C47F;
+  padding-right: 2px;
 }
 
 .card {
@@ -509,8 +524,9 @@ code {
   transition: all 0.1s ease-out;
 }
 .card:hover {
-  box-shadow: 10px 10px 10px 5px #e8e8e8;
+  box-shadow: 2px 2px 2px 2px #e8e8e8;
   border-left: 5px solid #F93827;
+  transform: translateY(1px);
 }
 
 .site-footer {
@@ -519,7 +535,7 @@ code {
 }
 
 .footer-heading {
-  font-size: 18px;
+  font-size: 20.25px;
   margin-bottom: calc(30px / 2);
 }
 
@@ -530,7 +546,7 @@ code {
 }
 
 .footer-col-wrapper {
-  font-size: 15px;
+  font-size: 16.875px;
   color: #828282;
   margin-left: calc(-1 * 30px / 2);
 }
@@ -582,9 +598,9 @@ code {
 }
 
 .site-title {
-  font-size: 26px;
+  font-size: 29.25px;
   font-weight: 300;
-  line-height: 54px;
+  line-height: 60.75px;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
@@ -595,7 +611,7 @@ code {
 
 .site-nav {
   float: right;
-  line-height: 54px;
+  line-height: 60.75px;
 }
 .site-nav .nav-trigger {
   display: none;
@@ -658,18 +674,60 @@ code {
   }
 }
 
+.doc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sidebar {
+  background-color: lightgray;
+  flex-basis: 250px;
+}
+
+.content-pane {
+  background-color: orange;
+  flex-basis: 720px;
+}
+
+.wrapper2 {
+  max-width: 2400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  max-width: -webkit-calc(720px - (30px * 2));
+  max-width: calc(720px - 30px * 2);
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    max-width: -webkit-calc(720px - (30px));
+    max-width: calc(720px - (30px));
+    padding-right: calc(30px / 2);
+    padding-left: calc(30px / 2);
+  }
+}
+
 .post-header {
   margin-bottom: 30px;
 }
 
 .post-title {
-  font-size: 42px;
+  font-size: 47.25px;
   letter-spacing: -1px;
   line-height: 1;
 }
 @media screen and (max-width: 800px) {
   .post-title {
-    font-size: 36px;
+    font-size: 40.5px;
   }
 }
 
@@ -677,7 +735,7 @@ code {
   margin-bottom: 30px;
 }
 .post-content h1 {
-  font-size: 35.2px;
+  font-size: 39.6px;
   font-weight: 700;
   margin: 50px 0 25px;
 }
@@ -691,32 +749,32 @@ code {
 }
 @media screen and (max-width: 800px) {
   .post-content h1 {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 .post-content h2 {
-  font-size: 28.8px;
+  font-size: 32.4px;
   margin: 30px 0 10px;
 }
 @media screen and (max-width: 800px) {
   .post-content h2 {
-    font-size: 28px;
+    font-size: 31.5px;
   }
 }
 .post-content h3 {
-  font-size: 24px;
+  font-size: 27px;
 }
 @media screen and (max-width: 800px) {
   .post-content h3 {
-    font-size: 22px;
+    font-size: 24.75px;
   }
 }
 .post-content h4 {
-  font-size: 20px;
+  font-size: 22.5px;
 }
 @media screen and (max-width: 800px) {
   .post-content h4 {
-    font-size: 18px;
+    font-size: 20.25px;
   }
 }
 
@@ -726,11 +784,11 @@ code {
 }
 
 .page-heading {
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .post-list-heading {
-  font-size: 28px;
+  font-size: 31.5px;
 }
 
 .post-list {
@@ -743,7 +801,7 @@ code {
 
 .post-link {
   display: block;
-  font-size: 24px;
+  font-size: 27px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -56,7 +56,7 @@ exclude:
 
 # Plugins
 toc:
-  max_level: 3
+  max_level: 2
 
 # Add class to external links for css
 target-blank:

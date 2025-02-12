@@ -27,9 +27,11 @@ layout: default
       </span>
       {% endif %}
       {% if page.collection %}
+      {% assign collectionArr = site.collections | where: "label", page.collection %}
+      {% assign collection_size = collectionArr[0].docs | size %}
       <span>
         <span class="icon icon-inline layer-group-before" />
-        {{ page.collection }} collection
+        {{ page.collection }} collection ({{ collection_size }})
       </span>
       {% endif %}
     </p>

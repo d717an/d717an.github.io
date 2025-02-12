@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=" en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
@@ -27,8 +27,8 @@
 </div>
 </header>
 <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        
+    <div class="wrapper2">
+      
   <script>
   document.addEventListener("DOMContentLoaded", function () {
     const backToTopButton = document.querySelector(".back-to-top");
@@ -41,33 +41,10 @@
 
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="doc">
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Installing a Homematic Underfloor Heating System</h1>
-    <p class="doc-meta">
-      <time class="dt-published" datetime="2025-01-27T00:00:00-05:00" itemprop="datePublished"><span>
-          <span class="icon icon-inline calendar-check-before"></span>
-          Jan 27, 2025
-        </span>
-      </time>
-      
-      
-      <span>
-        <span class="icon icon-inline book-open-before"></span>
-        10 minutes
-      </span>
-      
-      
-      <span>
-        <span class="icon icon-inline layer-group-before"></span>
-        heating collection
-      </span>
-      
-    </p>
-  </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
+    <div class="sidebar toc-pane">
+      <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h1">
 <a href="#why">Why?</a>
 <ul>
@@ -81,67 +58,48 @@
 <ul>
 <li class="toc-entry toc-h2"><a href="#get-the-app">Get the App</a></li>
 <li class="toc-entry toc-h2"><a href="#set-up-the-access-point">Set Up the Access Point</a></li>
-<li class="toc-entry toc-h2">
-<a href="#cv-room-prep">CV Room Prep</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#power-down-the-existing-system">Power Down the Existing System</a></li>
-<li class="toc-entry toc-h3"><a href="#record-your-existing-zones">Record Your Existing Zones</a></li>
-<li class="toc-entry toc-h3"><a href="#remove-the-cv-signal-wires">Remove the CV Signal Wires</a></li>
-<li class="toc-entry toc-h3"><a href="#unmount-old-underfloor-heating-controller">Unmount Old Underfloor Heating Controller</a></li>
-<li class="toc-entry toc-h3"><a href="#optional---add-mounting-board">Optional - Add Mounting Board</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2">
-<a href="#switch-actuator-for-heating-system-whs2">Switch Actuator for Heating System (WHS2)</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#hardware">Hardware</a></li>
-<li class="toc-entry toc-h3"><a href="#in-the-app">In the App</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2">
-<a href="#motorized-underfloor-heating-controller">Motorized Underfloor Heating Controller</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#hardware-1">Hardware</a></li>
-<li class="toc-entry toc-h3"><a href="#in-the-app-1">In the App</a></li>
-<li class="toc-entry toc-h3"><a href="#troubleshooting">Troubleshooting</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2">
-<a href="#thermostat-x3">Thermostat (x3)</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#hardware-2">Hardware</a></li>
-<li class="toc-entry toc-h3"><a href="#in-the-app-2">In the App</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2">
-<a href="#additional-configuration-in-the-app">Additional Configuration in the App</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#emergency-operation-heating">Emergency Operation Heating</a></li>
-<li class="toc-entry toc-h3"><a href="#schedules">Schedules</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2">
-<a href="#additional-testing">Additional Testing</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#what-happens-if-the-house-loses-internet">What Happens if the House Loses Internet?</a></li>
+<li class="toc-entry toc-h2"><a href="#cv-room-prep">CV Room Prep</a></li>
+<li class="toc-entry toc-h2"><a href="#switch-actuator-for-heating-system-whs2">Switch Actuator for Heating System (WHS2)</a></li>
+<li class="toc-entry toc-h2"><a href="#motorized-underfloor-heating-controller">Motorized Underfloor Heating Controller</a></li>
+<li class="toc-entry toc-h2"><a href="#thermostat-x3">Thermostat (x3)</a></li>
+<li class="toc-entry toc-h2"><a href="#additional-configuration-in-the-app">Additional Configuration in the App</a></li>
+<li class="toc-entry toc-h2"><a href="#additional-testing">Additional Testing</a></li>
 </ul>
 </li>
 </ul>
-</li>
-<li class="toc-entry toc-h1">
-<a href="#future-work">Future Work</a>
-<ul>
-<li class="toc-entry toc-h2"><a href="#bathroom-smart-thermostat">Bathroom Smart Thermostat</a></li>
-<li class="toc-entry toc-h2"><a href="#power-supplies-for-wall-thermostats">Power Supplies for Wall Thermostats</a></li>
-<li class="toc-entry toc-h2"><a href="#change-access-point-to-local-control">Change Access Point to Local Control</a></li>
-</ul>
-</li>
-</ul>
-<h1 id="why">
-<a class="anchor" href="#why" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why?</h1>
+    </div>
 
-<h2 id="why-replace-the-existing-system">
-<a class="anchor" href="#why-replace-the-existing-system" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why Replace The Existing System?</h2>
+    <div class="content-pane">
+      <header class="post-header">
+        <h1 class="post-title p-name" itemprop="name headline">Installing a Homematic Underfloor Heating System</h1>
+        <p class="doc-meta">
+          <time class="dt-published" datetime="2025-01-27T00:00:00-05:00" itemprop="datePublished"><span>
+              <span class="icon icon-inline calendar-check-before"></span>
+              Jan 27, 2025
+            </span>
+          </time>
+          
+          
+          <span>
+            <span class="icon icon-inline book-open-before"></span>
+            9 minutes
+          </span>
+          
+          
+          
+          
+          <span>
+            <span class="icon icon-inline layer-group-before"></span>
+            heating collection (3)
+          </span>
+          
+        </p>
+      </header>
+
+      <div class="post-content e-content" itemprop="articleBody">
+        <h1 id="why">Why?</h1>
+
+<h2 id="why-replace-the-existing-system">Why Replace The Existing System?</h2>
 
 <ul>
   <li>I wanted several features from my heating system
@@ -155,8 +113,7 @@
   </li>
 </ul>
 
-<h2 id="why-homematic-ip">
-<a class="anchor" href="#why-homematic-ip" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why Homematic IP?</h2>
+<h2 id="why-homematic-ip">Why Homematic IP?</h2>
 
 <ul>
   <li>I looked at other systems from Danfoss, WTH, and more</li>
@@ -184,8 +141,7 @@
   </li>
 </ul>
 
-<h1 id="purchases">
-<a class="anchor" href="#purchases" aria-hidden="true"><span class="octicon octicon-link"></span></a>Purchases</h1>
+<h1 id="purchases">Purchases</h1>
 
 <ul>
   <li>All components were purchased from Amazon.nl</li>
@@ -248,19 +204,16 @@
   </tbody>
 </table>
 
-<h1 id="installation-with-access-point">
-<a class="anchor" href="#installation-with-access-point" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation with Access Point</h1>
+<h1 id="installation-with-access-point">Installation with Access Point</h1>
 
-<h2 id="get-the-app">
-<a class="anchor" href="#get-the-app" aria-hidden="true"><span class="octicon octicon-link"></span></a>Get the App</h2>
+<h2 id="get-the-app">Get the App</h2>
 
 <ul>
   <li>Install Homematic IP app</li>
   <li>No log in / account needed, data is anonymized with the access point ID</li>
 </ul>
 
-<h2 id="set-up-the-access-point">
-<a class="anchor" href="#set-up-the-access-point" aria-hidden="true"><span class="octicon octicon-link"></span></a>Set Up the Access Point</h2>
+<h2 id="set-up-the-access-point">Set Up the Access Point</h2>
 
 <ul>
   <li>5 minutes</li>
@@ -275,23 +228,20 @@
   </li>
 </ul>
 
-<h2 id="cv-room-prep">
-<a class="anchor" href="#cv-room-prep" aria-hidden="true"><span class="octicon octicon-link"></span></a>CV Room Prep</h2>
+<h2 id="cv-room-prep">CV Room Prep</h2>
 
 <ul>
   <li>20 min</li>
 </ul>
 
-<h3 id="power-down-the-existing-system">
-<a class="anchor" href="#power-down-the-existing-system" aria-hidden="true"><span class="octicon octicon-link"></span></a>Power Down the Existing System</h3>
+<h3 id="power-down-the-existing-system">Power Down the Existing System</h3>
 
 <ul>
   <li>Unplug your CV</li>
   <li>Unplug your existing underfloor heating system (Danfoss CF-MC 071CU-02B-24) in my case</li>
 </ul>
 
-<h3 id="record-your-existing-zones">
-<a class="anchor" href="#record-your-existing-zones" aria-hidden="true"><span class="octicon octicon-link"></span></a>Record Your Existing Zones</h3>
+<h3 id="record-your-existing-zones">Record Your Existing Zones</h3>
 
 <ul>
   <li>Your heating manifold will have several heating circuits, each with a control valve
@@ -347,8 +297,7 @@
 
 <p><img src="/files/Pasted%20image%2020250127095940.png" alt="Pasted image 20250127095940.png" loading="lazy"></p>
 
-<h3 id="remove-the-cv-signal-wires">
-<a class="anchor" href="#remove-the-cv-signal-wires" aria-hidden="true"><span class="octicon octicon-link"></span></a>Remove the CV Signal Wires</h3>
+<h3 id="remove-the-cv-signal-wires">Remove the CV Signal Wires</h3>
 
 <ul>
   <li>
@@ -372,8 +321,7 @@
 
 <p><img src="/files/Pasted%20image%2020250127103540.png" alt="Pasted image 20250127103540.png" loading="lazy"></p>
 
-<h3 id="unmount-old-underfloor-heating-controller">
-<a class="anchor" href="#unmount-old-underfloor-heating-controller" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unmount Old Underfloor Heating Controller</h3>
+<h3 id="unmount-old-underfloor-heating-controller">Unmount Old Underfloor Heating Controller</h3>
 
 <ul>
   <li>Now that the CV control signal is separated from the old heating controller, the entire system can be removed</li>
@@ -388,8 +336,7 @@
   <li>Save the system or recycle it (e.g. at Praxis)</li>
 </ul>
 
-<h3 id="optional---add-mounting-board">
-<a class="anchor" href="#optional---add-mounting-board" aria-hidden="true"><span class="octicon octicon-link"></span></a>Optional - Add Mounting Board</h3>
+<h3 id="optional---add-mounting-board">Optional - Add Mounting Board</h3>
 
 <ul>
   <li>This is optional; you can also install directly into the masonry wall</li>
@@ -405,15 +352,13 @@
 
 <p><img src="/files/Pasted%20image%2020250127094250.png" alt="Pasted image 20250127094250.png" loading="lazy"></p>
 
-<h2 id="switch-actuator-for-heating-system-whs2">
-<a class="anchor" href="#switch-actuator-for-heating-system-whs2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Switch Actuator for Heating System (WHS2)</h2>
+<h2 id="switch-actuator-for-heating-system-whs2">Switch Actuator for Heating System (WHS2)</h2>
 
 <ul>
   <li>30 minutes</li>
 </ul>
 
-<h3 id="hardware">
-<a class="anchor" href="#hardware" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hardware</h3>
+<h3 id="hardware">Hardware</h3>
 
 <ul>
   <li>
@@ -466,8 +411,7 @@
   <li>The unit’s light should intermittently flash</li>
 </ul>
 
-<h3 id="in-the-app">
-<a class="anchor" href="#in-the-app" aria-hidden="true"><span class="octicon octicon-link"></span></a>In the App</h3>
+<h3 id="in-the-app">In the App</h3>
 
 <ul>
   <li>Click the “… More” button in the bottom right</li>
@@ -494,15 +438,13 @@
   </li>
 </ul>
 
-<h2 id="motorized-underfloor-heating-controller">
-<a class="anchor" href="#motorized-underfloor-heating-controller" aria-hidden="true"><span class="octicon octicon-link"></span></a>Motorized Underfloor Heating Controller</h2>
+<h2 id="motorized-underfloor-heating-controller">Motorized Underfloor Heating Controller</h2>
 
 <ul>
   <li>15 minutes</li>
 </ul>
 
-<h3 id="hardware-1">
-<a class="anchor" href="#hardware-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hardware</h3>
+<h3 id="hardware-1">Hardware</h3>
 
 <ul>
   <li>Attach the underfloor heating controller to the wall above your heating manifold
@@ -535,8 +477,7 @@
   <li>This calibration process may take 5-10 minutes depending on how many valves you have</li>
 </ul>
 
-<h3 id="in-the-app-1">
-<a class="anchor" href="#in-the-app-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>In the App</h3>
+<h3 id="in-the-app-1">In the App</h3>
 
 <ul>
   <li>Click the “… More” button in the bottom right</li>
@@ -561,8 +502,7 @@
   </li>
 </ul>
 
-<h3 id="troubleshooting">
-<a class="anchor" href="#troubleshooting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Troubleshooting</h3>
+<h3 id="troubleshooting">Troubleshooting</h3>
 
 <h4 id="heating-zone-error-adjustment-range-too-small-check-if-valve-pin-is-stuck">Heating zone error, adjustment range too small, check if valve pin is stuck</h4>
 
@@ -580,15 +520,13 @@
   </li>
 </ul>
 
-<h2 id="thermostat-x3">
-<a class="anchor" href="#thermostat-x3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thermostat (x3)</h2>
+<h2 id="thermostat-x3">Thermostat (x3)</h2>
 
 <ul>
   <li>5 minutes</li>
 </ul>
 
-<h3 id="hardware-2">
-<a class="anchor" href="#hardware-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hardware</h3>
+<h3 id="hardware-2">Hardware</h3>
 
 <ul>
   <li>Pull thermostat out and away from its bracket</li>
@@ -602,8 +540,7 @@
   </li>
 </ul>
 
-<h3 id="in-the-app-2">
-<a class="anchor" href="#in-the-app-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>In the App</h3>
+<h3 id="in-the-app-2">In the App</h3>
 
 <ul>
   <li>Click the “… More” button in the bottom right</li>
@@ -617,16 +554,14 @@
   <li>Give the device a name (e.g. “Main Bedroom Thermostat”)</li>
 </ul>
 
-<h2 id="additional-configuration-in-the-app">
-<a class="anchor" href="#additional-configuration-in-the-app" aria-hidden="true"><span class="octicon octicon-link"></span></a>Additional Configuration in the App</h2>
+<h2 id="additional-configuration-in-the-app">Additional Configuration in the App</h2>
 
 <ul>
   <li>Congrats, you’re done!</li>
   <li>It’s worth testing each room to make sure it successfully calls for heat</li>
 </ul>
 
-<h3 id="emergency-operation-heating">
-<a class="anchor" href="#emergency-operation-heating" aria-hidden="true"><span class="octicon octicon-link"></span></a>Emergency Operation Heating</h3>
+<h3 id="emergency-operation-heating">Emergency Operation Heating</h3>
 
 <ul>
   <li>In the app, select the “… More” button in the bottom right</li>
@@ -642,8 +577,7 @@
   <li>I changed it to 0% so that the CV does not unnecessarily heat our home; it’s very well insulated and has never dropped below 15C even with the heating off</li>
 </ul>
 
-<h3 id="schedules">
-<a class="anchor" href="#schedules" aria-hidden="true"><span class="octicon octicon-link"></span></a>Schedules</h3>
+<h3 id="schedules">Schedules</h3>
 
 <ul>
   <li>By default, my thermostats were set to a “Standard schedule” (visible on the app home screen under each room)</li>
@@ -667,11 +601,9 @@
   <li>Only one schedule can be active for a room at a time, but it’s easy to switch between them</li>
 </ul>
 
-<h2 id="additional-testing">
-<a class="anchor" href="#additional-testing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Additional Testing</h2>
+<h2 id="additional-testing">Additional Testing</h2>
 
-<h3 id="what-happens-if-the-house-loses-internet">
-<a class="anchor" href="#what-happens-if-the-house-loses-internet" aria-hidden="true"><span class="octicon octicon-link"></span></a>What Happens if the House Loses Internet?</h3>
+<h3 id="what-happens-if-the-house-loses-internet">What Happens if the House Loses Internet?</h3>
 
 <ul>
   <li>Without a home internet connection, I could not control the heating system from my phone</li>
@@ -679,45 +611,12 @@
   <li>In other words, without a home internet connection, the system operated exactly the same as the previous Danfoss system</li>
 </ul>
 
-<h1 id="future-work">
-<a class="anchor" href="#future-work" aria-hidden="true"><span class="octicon octicon-link"></span></a>Future Work</h1>
+      </div>
+    </div>
 
-<p>This is a list of things I’m going to do in the future to further enhance the heating system.</p>
-
-<h2 id="bathroom-smart-thermostat">
-<a class="anchor" href="#bathroom-smart-thermostat" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bathroom Smart Thermostat</h2>
-
-<ul>
-  <li>35 - 50 eur</li>
-  <li>Homematic IP makes a range of battery powered smart radiator thermostats</li>
-  <li>I’m going to replace our existing TRV radiator valve in our bathroom with one of these thermostats so that we can independently heat our bathroom without needing one of the heating zones to call for heat</li>
-</ul>
-
-<h2 id="power-supplies-for-wall-thermostats">
-<a class="anchor" href="#power-supplies-for-wall-thermostats" aria-hidden="true"><span class="octicon octicon-link"></span></a>Power Supplies for Wall Thermostats</h2>
-
-<ul>
-  <li>50 eur each</li>
-  <li>Homematic IP makes a 230VAC power supply for the battery powered thermostats
-    <ul>
-      <li>https://homematic-ip.com/en/product/power-supply-unit-brand-switches</li>
-    </ul>
-  </li>
-  <li>With this, you can add this into your wall next to a light switch or outlet and power your thermostats continuously from the mains, no batteries needed</li>
-  <li>Obviously, this is much more involved than just batteries, but nice to have the option!</li>
-</ul>
-
-<h2 id="change-access-point-to-local-control">
-<a class="anchor" href="#change-access-point-to-local-control" aria-hidden="true"><span class="octicon octicon-link"></span></a>Change Access Point to Local Control</h2>
-
-<ul>
-  <li>75 - 150 eur</li>
-  <li>The rest of our smart home is controlled via local APIs via Home Assistant</li>
-  <li>Homematic’s Access Point is an excellent and affordable way to get a modern heating system into the apartment</li>
-  <li>However, I’d like more local control, and I’m comfortable managing our own external access to the home</li>
-  <li>With that, I’ll eventually switch to Homematic IP’s other options for the “central brain”, either the CCU3 or the community’s open source RaspberryMatic</li>
-</ul>
-
+    <div class="sidebar spacer-pane">
+      <p>hello world</p>
+    </div>
   </div>
 
   <a class="u-url" href="/heating/homematic-heating-system" hidden></a>
@@ -729,8 +628,8 @@
   </footer>
 
 </article>
-      </div>
-    </main><footer class="site-footer h-card">
+    </div>
+  </main><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
 
   <div class="wrapper">
