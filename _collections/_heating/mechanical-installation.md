@@ -70,11 +70,11 @@ In my setup, there was only 24VDC across the CV control circuit, but probably be
 
 [![DanfossControllerWireRemoval.png](/files/heating/DanfossControllerWireRemoval.png)](/files/heating/DanfossControllerWireRemoval.png)
 
-The only wires we need to remove from this system are those going to the CV. In the picture above, those are the ones on the far left going to the relay. Also separate out and keep the pipe-mounted thermostat.
-
-Each wire in the old Danfoss controller has little orange push tab above it that can be depressed with a small flathead screwdriver. While depressing the orange tab, pull the wire out and away from the controller.
+The only wires we need to remove from this system are those going to the CV. In the picture above, those are the ones on the far left going to the relay. Also separate out and keep the pipe-mounted thermostat:
 
 ![20250127091907](/files/heating/20250127091907.png)
+
+Each wire in the old Danfoss controller has little orange push tab above it that can be depressed with a small flathead screwdriver. While depressing the orange tab, pull the wire out and away from the controller.
 
 ### Remove the Old Valve Actuators
 
