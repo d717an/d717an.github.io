@@ -9,12 +9,6 @@
   vertical-align: text-top;
 }
 
-.social-media-list {
-  li + li {
-    padding-top: 5px;
-  }
-}
-
 @font-face {
   font-family: 'Font Awesome 6 Free';
   font-style: normal;
@@ -81,7 +75,6 @@
 a.square-up-right-after:has(img) {
   position: relative;
   &::after {
-    // content: '\f360';
     position: absolute;
     top: 1%;
     right: 1%;

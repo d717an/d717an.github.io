@@ -3,24 +3,20 @@
 
   <div class="wrapper">
     <div class="footer-wrapper">
-      <div>
+      <div class="footer-support">
+        {%- include footerSupport.html -%}
+      </div>
+      <div class="footer-data">
         <!-- {{ site.title | escape }} -->
-        <img src="/assets/buy-me-a-coffee.svg" height="30px" />
-      </div>
-      <div>
-        <!-- {%- include social.html -%} -->
-        item 2
-      </div>
-      <div>
-        <!-- <p>{{- site.description | escape -}}</p> -->
-        item 3
+        <div class="footer-links">
+          {%- include footerLinks.html -%}
+          {%- include social.html -%}
+        </div>
+        <div class="footer-copyright">
+          {%- include footerCopyright.html -%}
+        </div>
       </div>
     </div>
-
-
-    <!-- TODO: add copyright -->
-
-
   </div>
 
 </footer>
