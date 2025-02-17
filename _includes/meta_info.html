@@ -1,0 +1,23 @@
+<div class="doc-meta">
+  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+  <span>
+    <span class="icon icon-inline calendar-check-before" />
+    {{ include.date | date: date_format }}
+  </span>
+  {% capture time %}{{ include.content | reading_time }}{% endcapture %}
+  {% if time != '0' %}
+  <span>
+    <span class="icon icon-inline book-open-before" />
+    {{ time }} {% if time == '1' %}minute{% else %}minutes{%
+    endif%}
+  </span>
+  {% endif %}
+  {% if include.collection %}
+  {% assign collectionArr = site.collections | where: "label", include.collection %}
+  {% assign collection_size = collectionArr[0].docs | size %}
+  <span>
+    <span class="icon icon-inline layer-group-before" />
+    {{ item.collection }} collection ({{ collection_size }})
+  </span>
+  {% endif %}
+</div>
