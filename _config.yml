@@ -18,13 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Dan's DIY Blog
+title: Amster-Dan
 description: >-
   I use this blog to share some of the DIY projects I work on.
 baseurl: "" # the subpath of your site, e.g. /blog
 domain: d717an-blog.github.io
 url: https://d717an-blog.github.io
-author: Dan Sullivan
 github_username: d717an
 rss: Subscribe
 
@@ -56,7 +55,7 @@ exclude:
 
 # Plugins
 toc:
-  max_level: 3
+  max_level: 2
 
 # Add class to external links for css
 target-blank:
