@@ -2,33 +2,24 @@
   <data class="u-url" href="{{ " /" | relative_url }}"></data>
 
   <div class="wrapper">
+    <div class="footer-wrapper">
+      <div>
+        <!-- {{ site.title | escape }} -->
+        <img src="/assets/buy-me-a-coffee.svg" height="30px" />
+      </div>
+      <div>
+        <!-- {%- include social.html -%} -->
+        item 2
+      </div>
+      <div>
+        <!-- <p>{{- site.description | escape -}}</p> -->
+        item 3
+      </div>
+    </div>
+
 
     <!-- TODO: add copyright -->
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-            {{ site.author | escape }}
-            {%- else -%}
-            {{ site.title | escape }}
-            {%- endif -%}
-          </li>
-          {%- if site.email -%}
-          <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-          {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
 
   </div>
 
