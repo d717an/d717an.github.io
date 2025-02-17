@@ -69,3 +69,21 @@
   }
 }
 
+// move external link icon for images to top right corner
+a.square-up-right-after:has(img) {
+  position: relative;
+  &::after {
+    // content: '\f360';
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    padding-left: 0px;
+  }
+}
+
+a > img {
+  transition: $transition;
+  &:hover {
+    box-shadow: $box-shadow-hover;
+  }
+}

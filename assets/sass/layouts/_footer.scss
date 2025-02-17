@@ -16,6 +16,8 @@
   margin-left: 0;
 }
 
+// TODO: replace with a simple grid or flex row
+
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
   color: $grey;

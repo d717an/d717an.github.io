@@ -8,6 +8,10 @@ Private repo where I can publish my blogs via GitHub pages
 - repo has to be installed if not already, `bundle install`
 - run locally: `bundle exec jekyll serve`
 
+### Emoji List
+
+https://unicode.org/emoji/charts/full-emoji-list.html
+
 ## Jekyll Notes
 
 You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

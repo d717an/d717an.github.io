@@ -1,3 +1,5 @@
+@use './colors' as c;
+
 $spacing-unit:     30px !default;
 
 $table-text-align: left !default;
@@ -13,3 +15,8 @@ $on-laptop:        800px !default;
 
 // Sidebar layout
 $sidebar-width:    250px !default;
+
+// Animations
+$transition:       all 0.1s ease-out;
+$box-shadow:       5px 5px 10px 5px c.$grey-light;
+$box-shadow-hover: 10px 10px 10px 5px c.$grey-light;
