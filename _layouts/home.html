@@ -14,27 +14,7 @@ layout: default
   <ul class="post-list">
     {%- for document in site.documents -%}
     <li class="card">
-      <div class="doc-meta">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span>
-          <span class="icon icon-inline calendar-check-before" />
-          {{ document.date | date: date_format }}
-        </span>
-        {% capture time %}{{ document.content | reading_time }}{% endcapture %}
-        {% if time != '0' %}
-        <span>
-          <span class="icon icon-inline book-open-before" />
-          {{ time }} {% if time == '1' %}minute{% else %}minutes{%
-          endif%}
-        </span>
-        {% endif %}
-        {% if document.collection %}
-        <span>
-          <span class="icon icon-inline layer-group-before" />
-          {{ document.collection }} collection
-        </span>
-        {% endif %}
-      </div>
+      {%- include meta_info.html date=document.date content=document.content collection=document.collection -%}
       <h3>
         <a class="post-link" href="{{ document.url | relative_url }}">
           {{ document.title | escape }}
