@@ -58,13 +58,15 @@ Here's how my system was ultimately configured:
 
 ## Remove the Old System
 
-**Once you start this process, you won't have heat until you finish installing and setting up the new system**. Best to read through all the blog posts in the series and to make sure you have everything you need (devices, materials from the hardware store, etc.).
+:warning: **Once you start this process, you won't have heat until you finish installing and setting up the new system**. Best to read through all the blog posts in the series and to make sure you have everything you need (devices, materials from the hardware store, etc.).
 
 Out with the old, in with the new!
 
 ### Remove the CV Signal Wires
 
-Before starting, **power down / unplug both your CV and your heating controller**. In my setup, there was only 24VDC across the CV control circuit, but probably best to avoid having live, exposed signal wires hanging around!
+:warning: Before starting, **power down / unplug both your CV and your heating controller**.
+
+In my setup, there was only 24VDC across the CV control circuit, but probably best to avoid having live, exposed signal wires hanging around!
 
 [![DanfossControllerWireRemoval.png](/files/heating/DanfossControllerWireRemoval.png)](/files/heating/DanfossControllerWireRemoval.png)
 
