@@ -34,6 +34,10 @@
     class="svg-icon">
     <use xlink:href="{{ '/assets/minima-social-icons.svg#youtube' | relative_url }}"></use>
   </svg> <span class="username">{{ site.youtube_username| escape }}</span></a>{%- endif -%}
+{%- if site.printables_handle -%}<a
+  href="https://www.printables.com/@{{ site.printables_handle| cgi_escape | escape }}"><svg class="svg-icon">
+    <use xlink:href="{{ '/assets/minima-social-icons.svg#printables' | relative_url }}"></use>
+  </svg> <span class="username">{{ site.printables_handle| escape }}</span></a>{%- endif -%}
 {%- if site.rss -%}<a href="{{ 'feed.xml' | relative_url }}"><svg class="svg-icon">
     <use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use>
   </svg> <span>{{ site.rss | escape }}</span></a>{%- endif -%}
