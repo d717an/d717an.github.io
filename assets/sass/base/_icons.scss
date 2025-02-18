@@ -82,7 +82,7 @@ a.square-up-right-after:has(img) {
   }
 }
 
-a > img {
+a img {
   transition: $transition;
   &:hover {
     box-shadow: $box-shadow-hover;
