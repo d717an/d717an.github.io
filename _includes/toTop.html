@@ -1,9 +1,34 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const backToTopButton = document.querySelector(".back-to-top");
+    const backToTopButton = document.querySelector('.back-to-top');
+    const footer = document.querySelector('footer');
 
     backToTopButton.addEventListener("click", function () {
       window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    function updateButtonPosition() {
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const footerStart = footer.offsetTop;
+      const startingOffset = 20;
+      const bottomOffset = scrollPosition - footerStart;
+
+      // Update the button position based on the scroll position
+      if (scrollPosition >= footerStart) {
+        backToTopButton.style.bottom = `${Math.max(bottomOffset, startingOffset)}px`;
+      } else {
+        backToTopButton.style.bottom = '20px';
+      }
+
+      console.log(`scrollPosition, footerStart, bottomOffset, buttonBottom: ${scrollPosition},${footerStart},${bottomOffset},${backToTopButton.style.bottom}`);
+    }
+
+    let timeoutId = null;
+    window.addEventListener('scroll', () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+      timeoutId = setTimeout(updateButtonPosition, 50); // Update every x ms
     });
   });
 </script>
