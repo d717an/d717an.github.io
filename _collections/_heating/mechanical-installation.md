@@ -104,9 +104,9 @@ If choose the cloud configuration of the HomematicIP system, you can only assign
 
 This is the most involved portion of installing the heating system yourself. Don't be intimidated though, it's not that bad. You'll need a few things from Praxis or your local hardware store:
 
-- a mix of [two]() and [three way lever nuts]()
-- an [electrical junction box]()
-- a [power cord]()
+- a mix of [two](https://www.praxis.nl/elektra/bedrading/kabelverbinders-kabeldozen/verbindingsklemmen/kopp-hersluitbare-lasklem-2-voudig-10-stuks/10123270) and [three way lever nuts](https://www.praxis.nl/elektra/bedrading/kabelverbinders-kabeldozen/verbindingsklemmen/kopp-hersluitbare-lasklem-3-voudig-10-stuks/10123272)
+- an [electrical junction box](https://www.praxis.nl/elektra/bedrading/kabelverbinders-kabeldozen/lasdozen/kopp-kabeldoos-lasklemmen-ip54-grijs-85x85x40mm/10086585)
+- a [power cord](https://www.praxis.nl/elektra/stekkers/aansluitsnoeren-met-stekker/chacon-aansluitsnoer-wit-1-5-meter/5578361)
 - some [electrical tape](https://www.praxis.nl/gereedschap-werkplaats/handgereedschap/elektriciensgereedschap/elektrische-isolatietape/tesa-elektrische-isolatie-pvc-tape-zwart-15mm-10m/4453300)
 
 I'm assuming you have some basic tools like a screwdriver and wire strippers (though a utility knife can strip wires in a pinch).
