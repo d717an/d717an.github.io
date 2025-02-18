@@ -26,6 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 domain: d717an-blog.github.io
 url: https://d717an-blog.github.io
 github_username: d717an
+printables_handle: d717an_537024
 
 collections_dir: _collections
 collections:
