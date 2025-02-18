@@ -16,7 +16,7 @@ _This is the first post in a series of blogs about upgrading our underfloor heat
 
 To be clear, our home is only about ten years old, and the current heating system is not "bad" by any means. The Danfoss system consists of an efficient on-demand CV (i.e. boiler) supplying hot water for seven underfloor heating zones and one radiator in the main bathroom. Each of the Normally Open (NO) underfloor heating zones are controlled by a 24V valve actuator. The valve actuators are controlled by a [central control unit](https://store.danfoss.com/is/en/Climate-Solutions-for-heating/Hydronic-floor-heating/Service-kits-for-hydronic-floor-heating/Floor-Heating-Controls%2C-Master-Controller-CF2%2B%2C-230-0-V%2C-Number-of-channels%3A-5/p/088U0245) which can modulate how much each valve is open to control the flow rate of each heating loop. There's no pump for the heating loops - I assume our water pressure is all that drives the loop. The control unit also has a relay it uses to turn the CV on and off (using a 24V signal provided by the CV). Finally, there are three wireless thermostats in the house that use the 868Mhz frequency to communicate with the control unit.
 
-[{% picture /files/heating/DanfossDiagram.png --alt DanfossDiagram %}](/files/heating/DanfossDiagram.png)
+[{% picture jpt-webp /files/heating/DanfossDiagram.png --alt DanfossDiagram %}](/files/heating/DanfossDiagram.png)
 
 ### Issues
 
@@ -38,7 +38,7 @@ I didn't like any solution where I would have to go through a supplier or contra
 
 That's why I was happy to to come across the [HomematicIP](https://homematic-ip.com/en) ecosystem from German company eQ-3. They have a wide range of climate control devices for all sorts of heating systems (230V, 24V, wired, wireless, etc.). They also have a collection of other devices if I ever want to expand the system into other smart areas like light controls, security devices, air quality sensors, and more.
 
-[{% picture /files/heating/HomematicIPOfferings.png --alt HomematicIPOfferings %}](https://homematic-ip.com/en/products-heating-and-climate-control?f%5B0%5D=category:66&page=,,,,,,,,,,1)
+[{% picture jpt-webp /files/heating/HomematicIPOfferings.png --alt HomematicIPOfferings %}](https://homematic-ip.com/en/products-heating-and-climate-control?f%5B0%5D=category:66&page=,,,,,,,,,,1)
 
 I greatly appreciate how they embrace empowering the owner. Every device is provided with detailed manuals, they publish YouTube videos demonstrating the components, and devices are readily available directly for the consumer through retailers like Amazon.nl. Additionally, there is an avid [community of HomematicIP users](https://homematic-forum.de/forum/), meaning there is a great deal of support if you need it!
 
@@ -100,7 +100,7 @@ I started with the Cloud option because it's the easiest to set up and test, and
 
 And here's what the system architecture looks like. I'll call out a few key differences to the Danfoss system here.
 
-[{% picture /files/heating/HomematicDiagramAccessPoint.png --alt HomematicDiagramAccessPoint %}](/files/heating/HomematicDiagramAccessPoint.png)
+[{% picture jpt-webp /files/heating/HomematicDiagramAccessPoint.png --alt HomematicDiagramAccessPoint %}](/files/heating/HomematicDiagramAccessPoint.png)
 
 First, you'll notice that the underfloor heating controller does not communicate with the CV. It seems that the HomematicIP system's philosophy is to separate functions as much as possible. Perhaps this keeps down individual unit costs and allows for maximum flexibility? I'm not sure. Anyways, you need a separate unit to tell the CV to turn on and provide heat. It's basically a set of wirelessly controlled relays.
 
@@ -112,4 +112,4 @@ This has some pros and cons. On one hand, this introduces another point of failu
 
 Next up, the [mechanical installation](/heating/mechanical-installation)!
 
-{% picture /files/heating/HomematicProductStack.png --alt HomematicProductStack %}
+{% picture jpt-webp /files/heating/HomematicProductStack.png --alt HomematicProductStack %}
