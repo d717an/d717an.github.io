@@ -22,7 +22,7 @@ Each new device will need to be put into pairing mode so that the Access Point c
 
 First, install HomematicIP app onto your phone. Data is anonymized through your Access Point ID, so you don't need to create an account!
 
-![ipLogo](/files/heating/ipLogo.png)
+{% picture /files/heating/ipLogo.png class="w25" --alt ipLogo %}
 
 ## Set Up the Access Point
 
@@ -30,7 +30,7 @@ The Access Point comes with an AC power adapter and an ethernet cable. Remember 
 
 The app will walk you through the set up process. It can take a few minutes for the light to go blue after connecting to your network via ethernet. After it's connected to the HomematicIP cloud, it will probably need a few more minutes to install some updates - the status LED will flash orange and there will be a message on the app. You can also change the brightness of the Access Point LED via the app, which is great if you have it out on a TV console like I do.
 
-![Screenshot_AccessPoint](/files/heating/Screenshot_AccessPoint.png)
+{% picture /files/heating/Screenshot_AccessPoint.png class="w50" --alt Screenshot_AccessPoint %}
 
 Now that the central "brain" of the system is set up on the app, you can start adding the rest of your devices. We'll start by activating all of our thermostats. This way, we'll have rooms and sensors set up in the app, and we'll be able to assign heating outputs to them.
 
@@ -42,7 +42,7 @@ To add the thermostat to the app, you'll need the last four digits of its SFTIN 
 
 The thermostat can be mounted to the wall using the grey plate. Alternatively, my thermostats also came with some double sided tape if you want to stick them to the wall. There are also [desk / table mounts](https://www.amazon.nl/-/en/Homematic-Holder-Accessory-Devices-141743A0/dp/B011U6591W/) if you don't want to mount the thermostat to the wall. I mounted mine to the wall, and I found the hole pattern matched the mounting holes for the old Danfoss thermostats (standard 55mm electrical boxes). 3mm countersunk screws fit the wall plate nicely.
 
-![WallThermostat](/files/heating/WallThermostat.png)
+{% picture /files/heating/WallThermostat.png --alt WallThermostat %}
 
 ### In the App
 
@@ -61,7 +61,7 @@ Repeat for all of your thermostats.
 
 With all actuators like radiator thermostats and heating manifold valve actuators, they start a calibration process as soon as they get power for the first time. With that in mind, it's best to install them _first_, then give them power for the first time. You shouldn't need any tools to install the thermostat onto the valve adapter on the radiator. What I found worked best for me was to screw the thermostat on by hand with the screen of the thermostat pointing up. Then, when I couldn't snug up the nut any further, I rotated the body of the thermostat another 45 degrees away from the wall, snugging up the nut and making the screen easier to see.
 
-![RadiatorThermostat](/files/heating/RadiatorThermostat.png)
+{% picture /files/heating/RadiatorThermostat.png --alt RadiatorThermostat %}
 
 Now that the body of the thermostat is installed, you can remove the battery cover, install batteries, and power on the device. You may hear the motor start moving as it trains the device on the location of the valve.
 
@@ -85,7 +85,7 @@ If you see errors on the thermostat like "F1", "F2", or "F3", you have a mechani
 - Did you include a plunger between the thermostat and the valve adapter?
 - Does the plunger stick out of the adapter about 5-10 mm?
 
-![RadiatorAdapterPlunger](/files/heating/RadiatorAdapterPlunger.png)
+{% picture /files/heating/RadiatorAdapterPlunger.png --alt RadiatorAdapterPlunger %}
 
 ## Switch Actuator (WHS2)
 

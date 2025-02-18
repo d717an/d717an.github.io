@@ -10,6 +10,7 @@ group :jekyll_plugins do
   gem "liquid_reading_time", "~> 1.1.3"
   gem "jekyll-loading-lazy", "~> 0.1.1"
   gem "jemoji", "~> 0.13.0"
+  gem 'jekyll_picture_tag', '~> 2.1.0'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
