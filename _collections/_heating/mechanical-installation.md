@@ -30,7 +30,7 @@ This system works for my CV (a 2013 Intergas Kombi Kompakt HRE 36/30) - make sur
 
 Before removing everything, take a minute to document the existing system. You'll need to be able to associate each heating circuit with the room it heats.
 
-[![ManifoldOld.png](/files/heating/ManifoldOld.png)](/files/heating/ManifoldOld.png)
+[{% picture /files/heating/ManifoldOld.png --alt ManifoldOld.png %}](/files/heating/ManifoldOld.png)
 
 Your heating manifold will have several heating circuits, each with a control valve and valve actuator. In my case, I have eight heating circuits with seven control valves. The eighth circuit is left permanently open because it's controlled with a Thermostatic Radiator Valve (TRV) on the bathroom radiator, hence no valve is needed on the manifold.
 
@@ -38,11 +38,11 @@ Thankfully, either the installer or a previous owner grouped the heating circuit
 
 The old [Danfoss heating controller](https://store.danfoss.com/is/en/Climate-Solutions-for-heating/Hydronic-floor-heating/Service-kits-for-hydronic-floor-heating/Floor-Heating-Controls%2C-Master-Controller-CF2%2B%2C-230-0-V%2C-Number-of-channels%3A-5/p/088U0245) (model CF-MC, aka 088U0245, part number 071CU-02B-24) has a relay and can control up to five heating circuits.
 
-[![DanfossController.png](/files/heating/DanfossController.png)](/files/heating/DanfossController.png)
+[{% picture /files/heating/DanfossController.png --alt DanfossController.png %}](/files/heating/DanfossController.png)
 
 Obviously, that doesn't work for seven heating circuits, so we get this lovely junction box where multiple valve actuators are merged into a single zone for the heating controller. Thankfully, the new system can control up to 12 zones, so no need mess around with valve actuator wiring! We will need to do some wiring, so you may want to keep this plastic junction box if it's good shape.
 
-![DanfossWiringMess.png](/files/heating/DanfossWiringMess.png)
+{% picture /files/heating/DanfossWiringMess.png --alt DanfossWiringMess.png %}
 
 Here's how my system was ultimately configured:
 
@@ -68,11 +68,11 @@ Out with the old, in with the new!
 
 In my setup, there was only 24VDC across the CV control circuit, but probably best to avoid having live, exposed signal wires hanging around!
 
-[![DanfossControllerWireRemoval.png](/files/heating/DanfossControllerWireRemoval.png)](/files/heating/DanfossControllerWireRemoval.png)
+[{% picture /files/heating/DanfossControllerWireRemoval.png --alt DanfossControllerWireRemoval.png %}](/files/heating/DanfossControllerWireRemoval.png)
 
 The only wires we need to remove from this system are those going to the CV. In the picture above, those are the ones on the far left going to the relay. Also separate out and keep the pipe-mounted thermostat:
 
-![20250127091907](/files/heating/20250127091907.png)
+{% picture /files/heating/20250127091907.png class="w75" --alt 20250127091907 %}
 
 Each wire in the old Danfoss controller has little orange push tab above it that can be depressed with a small flathead screwdriver. While depressing the orange tab, pull the wire out and away from the controller.
 
@@ -80,7 +80,7 @@ Each wire in the old Danfoss controller has little orange push tab above it that
 
 The old valve actuators will come off very easily; just push hard on the push tab on the front of the actuator, then pull it up and away from the valve. Then unscrew the plastic adapter piece from the metal valve.
 
-[![ValveActuatorRemoval](/files/heating/ValveActuatorRemoval.png)](/files/heating/ValveActuatorRemoval.png)
+[{% picture /files/heating/ValveActuatorRemoval.png --alt ValveActuatorRemoval %}](/files/heating/ValveActuatorRemoval.png)
 
 ### Remove the Old Heating Controller
 
@@ -92,7 +92,7 @@ This is completely optional, but I prefer installing some plywood backing to the
 
 A 61cm x 122cm x 18mm underlayment board from Praxis (local hardware store) was less than 20 euros, and the store cut off a 61 x 40 cm piece for me. I put a few coats of white paint on it so it blended in to the wall, then fixed it to the masonry wall directly above the plywood used for the heating manifold with a few large anchors. I didn't take a picture before mounting the new heating controller, so here's a sneak peak of the finished installation.
 
-![ 20250127094250.png](/files/heating/20250127094250.png)
+{% picture /files/heating/20250127094250.png --alt  20250127094250.png %}
 
 ## Switch Actuator (WHS2)
 
@@ -125,7 +125,7 @@ Just a reminder of what I said before...
 
 Here's the wiring we're going for. This assumes a couple of things. First, I'm also wiring up Output 2 because I'm installing a radiator thermostat in addition to the underfloor heating controller. Second, my system already had a contact thermostat clipped on to the manifold supply line, so I'm keeping it in the system. Obviously, adjust your set up as needed.
 
-[![ActuatorWiringSchematic](/files/heating/ActuatorWiringSchematic.png)](/files/heating/ActuatorWiringSchematic.png)
+[{% picture /files/heating/ActuatorWiringSchematic.png --alt ActuatorWiringSchematic %}](/files/heating/ActuatorWiringSchematic.png)
 
 Here's how this works. The CV provides a 24VDC line (don't base your wiring off of color, my CV was wired up with blue as the 24V line) and a return wire. When the blue wire is brought up to 24VDC, the CV starts providing hot water to the heating pipework. With this wiring setup, either Output 1 our Output 2 can connect the return wire to 24V.
 
@@ -137,7 +137,7 @@ The contact thermostat acts as a switch in the system. I don't have the exact sp
 
 You can access the connection terminals and mounting holes of the switch actuator by loosening the screws on the bottom back of the switching actuator unit (they do not need to be removed completely). Gently pull the front door down, then away from the unit at the bottom edge, and it should come free. With a sharp utility knife or pair of pliers, remove the left and right-most bushing openings from the bottom rear of the actuator. Gently remove the left and rightmost strain relief clamps with a screwdriver and make your connections. I used a few wraps of electrical tape on my CV signal cable to ensure a snug fit with the strain relief clamp. My CV connection wire had a bunch of slack, so I cut off some of the slack and used it to make the second connection from the junction box to Output 2.
 
-[![WiredSwitchActuator](/files/heating/WiredSwitchActuator.png)](/files/heating/WiredSwitchActuator.png)
+[{% picture /files/heating/WiredSwitchActuator.png class="w75" --alt WiredSwitchActuator %}](/files/heating/WiredSwitchActuator.png)
 
 Check all of your connections are secure (i.e. tug test) and confirm everything is in the right place. Finish the installation by mounting the switch actuator to the wall. Mount the junction box to the wall. Finally, replace the cover of the switching actuator and junction box.
 
@@ -161,20 +161,20 @@ Next, install the new HomematicIP motorized valve actuators onto the adapters. *
 
 Finally, plug the valves into the underfloor heating controller starting from the left. Cable manage to your heart's content! It should look something like this when you're done, though nothing will be on the screen, because we'll power things on and configure things in the next blog post.
 
-![WiredActuator](/files/heating/WiredActuator.png)
+{% picture /files/heating/WiredActuator.png --alt WiredActuator %}
 
 ## Bathroom Radiator Thermostat
 
 Changing the bathroom thermostat only requires an adjustable wrench. Remove the existing radiator thermostat, gently loosening the nut with an adjustable wrench.
 
-![TrvRemoval](/files/heating/TrvRemoval.png)
+{% picture /files/heating/TrvRemoval.png --alt TrvRemoval %}
 
 Unfortunately, the adapter I needed to bring my radiator's M28 thread size to the HomematicIP thermostat's M30 size wasn't included with the thermostat. The correct adapter was easily found on Amazon though. Screw on the adapter hand tight, and you can very gently snug it up with a wrench if you like. The adapter comes with a few plungers of different sizes - pick one that protrudes from the adapter body about five millimeters, like so. We'll add the actual thermostat after installing the Access Point in the next post.
 
-![AdapterInstalled](/files/heating/AdapterInstalled.png)
+{% picture /files/heating/AdapterInstalled.png --alt AdapterInstalled %}
 
 ## Next Steps
 
-![FinishedInstallation](/files/heating/FinishedInstallation.png)
+{% picture /files/heating/FinishedInstallation.png --alt FinishedInstallation %}
 
 Finally, we'll [power on and configure the system](/heating/configuration-with-access-point) using the HomematicIP app!

@@ -36,12 +36,28 @@ main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
+/**
+ * max width
+ */
+.w75 {
+  max-width: 75%;
+}
+
+.w50 {
+  max-width: 50%;
+}
+
+.w25 {
+  max-width: 25%;
+}
+
 
 
 /**
  * Images
  */
 img {
+  height: auto;
   max-width: 100%;
   display: block;
   margin: 0 auto;

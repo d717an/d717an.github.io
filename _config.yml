@@ -60,3 +60,7 @@ toc:
 # Add class to external links for css
 target-blank:
   add_css_classes: icon square-up-right-after
+
+# jekyll-auto-image plugin configuration
+picture:
+  dimension_attributes: true
